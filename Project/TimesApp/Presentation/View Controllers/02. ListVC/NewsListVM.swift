@@ -7,12 +7,11 @@
 
 import UIKit
 
-protocol NewsListInput {
+protocol NewsListOutput {
     var newsArray: [News]? { get set }
 }
 
-protocol NewsListOutput {
-//    func getNewsListNews(endpoints: Endpoints, completion: @escaping (String?, Bool) -> Void)
+protocol NewsListInput {
     func getNewsListNews(url: String, completion: @escaping (Bool, String?) -> Void)
     func searchNews(_ newsName: String, completion: @escaping () -> Void)
 }
