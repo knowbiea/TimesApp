@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.9.1)
+  - PromiseKit/Alamofire (6.17.1):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.17.1)
+  - SwiftLint (0.47.1)
+
+DEPENDENCIES:
+  - PromiseKit/Alamofire
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PromiseKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  PromiseKit: ee485df3d4dc570594d7e7aecae6352697dc6a4c
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+
+PODFILE CHECKSUM: 4670c1de0a5710349e21936312daed5adb80877d
+
+COCOAPODS: 1.11.3

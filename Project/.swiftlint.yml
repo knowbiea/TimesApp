@@ -1,0 +1,49 @@
+# ***** Rules ***** #
+# https://realm.github.io/SwiftLint/rule-directory.html
+
+disabled_rules: # rule identifiers to exclude from running
+ - trailing_whitespace              # Trailing Whitespace Violation
+ - orphaned_doc_comment             # Orphaned Doc Comment
+ - vertical_parameter_alignment     # Vertical Parameter Alignment
+# - force_cast                       # Force Cast Violation
+ - file_length
+ - large_tuple
+ - cyclomatic_complexity
+ - function_body_length
+ - function_parameter_count
+# - line_length
+
+# - syntactic_sugar                  # Syntactic Sugar
+# - colon                           # Colon Violation
+
+whitelist_rules:
+
+opt_in_rules: # some rules are only opt-in
+
+
+analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+- explicit_self
+
+force_cast:
+    warning # implicitly
+force_try:
+  severity: warning # explicitly
+  
+identifier_name:
+    min_length: 1
+    max_length:
+        warning: 90
+        error: 1000
+  
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+ - Carthage
+ - Pods
+ 
+included: # paths to include during linting. `--path` is ignored if present.
+- TimesApp
+ 
+line_length: 500
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)
+
+
