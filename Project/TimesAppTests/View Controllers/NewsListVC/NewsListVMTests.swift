@@ -27,11 +27,10 @@ class NewsListVMTests: XCTestCase {
     func testMockNewsAPICalling() {
         // Given
         let newsListVM = viewModel
-        guard let path = bundle.url(forResource: "News", withExtension: "json") else { return }
         let expectation = self.expectation(description: "Testing News API Calling")
         
         // When
-        newsListVM?.getNewsListNews(url: path.absoluteString, completion: { success, error in
+        newsListVM?.getNewsListNews(completion: { success, error in
             expectation.fulfill()
         })
         

@@ -7,18 +7,19 @@
 
 import UIKit
 
-class NewsListVC: BaseVC {
+final class NewsListVC: BaseVC {
     
     // MARK: - IBOutlet
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    var viewModel: NewsListVM?
+    var viewModel: NewsListVM!
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "News"
         tableView.registerCells(.newsTVCell)
         setAccessibilityIdentifier()
         getNewsResponse()
@@ -29,15 +30,15 @@ class NewsListVC: BaseVC {
     }
     
     // MARK: - Custom Methods
-    func setAccessibilityIdentifier() {
+    private func setAccessibilityIdentifier() {
         tableView.accessibilityIdentifier = AccessibilityIdentifier.newsListTableView
         searchBar.accessibilityIdentifier = AccessibilityIdentifier.newsListSearch
         view.accessibilityIdentifier = AccessibilityIdentifier.newsListView
     }
     
     // MARK: - API Calling
-    func getNewsResponse() {
-        viewModel?.getNewsListNews(url: Endpoints.news.url, completion: { [weak self] success, error in
+    private func getNewsResponse() {
+        viewModel.getNewsListNews(completion: { [weak self] success, error in
             guard let self = self else { return }
             self.tableView.reloadData()
         })
@@ -47,12 +48,12 @@ class NewsListVC: BaseVC {
 // MARK: - UITableView Datasource
 extension NewsListVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel?.newsFilteredArray?.count ?? 0
+        viewModel.newsFilteredArray?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = NewsTVCell.dequeueReusableCell(for: tableView)
-        cell.news = viewModel?.newsFilteredArray?[indexPath.row]
+        cell.news = viewModel.newsFilteredArray?[indexPath.row]
         
         return cell
     }
@@ -75,7 +76,7 @@ extension NewsListVC: UITableViewDelegate {
 // MARK: - UISearchBar Delegate
 extension NewsListVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel?.searchNews(searchText, completion: { [weak self] in
+        viewModel.searchNews(searchText, completion: { [weak self] in
             guard let self = self else { return }
             self.tableView.reloadData()
         })

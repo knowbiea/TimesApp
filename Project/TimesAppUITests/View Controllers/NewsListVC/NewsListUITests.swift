@@ -22,10 +22,10 @@ class TimesAppUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        let getNewsButton = app.staticTexts["Get News"]
-        XCTAssertTrue(getNewsButton.exists)
-
-        getNewsButton.tap()
+//        let getNewsButton = app.staticTexts["Get News"]
+//        XCTAssertTrue(getNewsButton.exists)
+//
+//        getNewsButton.tap()
 
         let tableView = app.tables["newsListTableView"]
         XCTAssertTrue(tableView.exists, "Table does not exist")

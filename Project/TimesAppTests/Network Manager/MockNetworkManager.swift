@@ -14,15 +14,25 @@ struct MockNetworkManager: NetworkManagerProtocol {
     
     @discardableResult
     func apiModelRequest<T: Decodable>(_ model: T.Type,
-                                       _ url: String,
+                                       _ endpoint: Endpoints,
                                        _ httpMethod: HTTPMethod = .get,
                                        _ header: [String : String]? = nil,
                                        _ parameter: [String : AnyObject]? = nil,
                                        success: @escaping (T) -> Void,
                                        failure: @escaping (Error) -> Void) -> SessionManager? {
         
+        guard let fileName = getUrlName(endpoint) else {
+            failure(self.parseError(APIError.fileName))
+            return nil
+        }
+        
+        guard let path = Mock().bundle.url(forResource: fileName, withExtension: "json") else {
+            failure(self.parseError(APIError.jsonFile))
+            return nil
+        }
+        
         let sessionManager = Alamofire.SessionManager.default
-        sessionManager.request(url, method: httpMethod, parameters: parameter, encoding: JSONEncoding.default, headers: header).response {
+        sessionManager.request(path.absoluteString, method: httpMethod, parameters: parameter, encoding: JSONEncoding.default, headers: header).response {
             response in
         
             if response.error != nil {
@@ -54,4 +64,13 @@ struct MockNetworkManager: NetworkManagerProtocol {
          
          return error
      }
+    
+    func getUrlName(_ endpoint: Endpoints) -> String? {
+        
+        switch endpoint {
+        case .news: if case .news = endpoint { return "News" }
+        }
+        
+        return nil
+    }
 }
