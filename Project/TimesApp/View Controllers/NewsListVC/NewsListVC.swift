@@ -38,7 +38,7 @@ final class NewsListVC: BaseVC {
     
     // MARK: - API Calling
     private func getNewsResponse() {
-        viewModel.getNewsListNews(completion: { [weak self] success, error in
+        viewModel.getNewsListNews(completion: { [weak self] _, _ in
             guard let self = self else { return }
             self.tableView.reloadData()
         })

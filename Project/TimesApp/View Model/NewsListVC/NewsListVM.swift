@@ -25,8 +25,8 @@ final class NewsListVM: NewsListProtocol {
     var newsFilteredArray: [News]?
     var networkManager: NetworkManagerProtocol!
     
-    init(networkManager: NetworkManagerProtocol) {
-        self.networkManager = networkManager
+    init() {
+        networkManager = Constants.networkManager
     }
     
     // MARK: - Custom Methods
