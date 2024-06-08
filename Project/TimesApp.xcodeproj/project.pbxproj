@@ -10,10 +10,10 @@
 		011E7D893727AE1CD3B9700FB62E0AF6 /* StringProtocol+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61098F918C85CE4810A57912F162B043 /* StringProtocol+Ext.swift */; };
 		121261775A5E00FF88B2D9CBF6B61446 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78DD318382CCE2D2EEE9C939BAFEAA /* NetworkManager.swift */; };
 		1D1183CDC3D13311BD45186973CF92B0 /* NewsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC2767515DC47FEFDF46608BA2B4817F /* NewsTVCell.xib */; };
+		23ECEBB5972120175AFE27AD /* Pods_TimesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A11CE98E7C43A51874FD822 /* Pods_TimesAppTests.framework */; };
 		24C56131A5A0F59FB938D1A684F835B8 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57AA35883A92DE35DF4622CF3B3996D /* UIStoryboard+Ext.swift */; };
 		2E3C696175CDD2C0CF9958D76283970B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB344060E7E234714E376B6AEBCBA4 /* BaseVC.swift */; };
 		4032AA4050F0E8F67DF15E8E5536E099 /* NewsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58915F94F0E66A79DAD76042DA4002 /* NewsListUITests.swift */; };
-		48CAA6F16C4AF4B7B2CEC18930F0DCC8 /* Pods_TimesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722D226D45EB0B56EE9877917F7E9C8E /* Pods_TimesApp.framework */; };
 		502D89E95C9F855C2DDE94F0356AABA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3F1A7DC71AFC7CCD027A884C7E886F /* LaunchScreen.storyboard */; };
 		521CE42AF604A81DC5AC9DE021E446ED /* TableViewIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F928EC5F779E9E00383462764B647F74 /* TableViewIdentifier.swift */; };
 		5C13FC38780E3C79FABEA81475AB30B7 /* NewsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87984AF933481BEF1E854F8581AB3E4E /* NewsListVC.swift */; };
@@ -32,8 +32,8 @@
 		AED85CE36D6A27925C80A60D3A27DD2B /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B237C73AADDEC55E78C64CDF026EBB12 /* Mockable.swift */; };
 		B47E14A38E9284FFFB730AA49B7EF079 /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDDECF58423110F6D089B364B1686F /* AccessibilityIdentifier.swift */; };
 		BFB3D2C13627ACF49036E4B88E0BD4FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CB76230D855E8A4A5F1A79BB62AC4B /* SceneDelegate.swift */; };
+		C5A9C2C72E12015616F081FD /* Pods_TimesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7060B4FC6B0B7584FF6663 /* Pods_TimesApp.framework */; };
 		CB167FF87FEE4FF46AC7A34634F6CDF4 /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDDECF58423110F6D089B364B1686F /* AccessibilityIdentifier.swift */; };
-		D66E39EF30BD91F5C7F27C3712BA738E /* Pods_TimesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDB5B31B48D6C2D64053B08168F8F4B /* Pods_TimesAppTests.framework */; };
 		D7B6DF7A8D15C61E54DA5C302DEE8E76 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2A381E973302A034FB470BDD5D253E8D /* .swiftlint.yml */; };
 		DDD03A0F812AF94896EACBBE59024D58 /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3619BC9C68DF6D06CB9E5DAF774E41 /* News.json */; };
 		E8491763823311AED94A4C889783C736 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB56F57CB3200812A23DBF42398264 /* UITableView+Ext.swift */; };
@@ -64,19 +64,20 @@
 /* Begin PBXFileReference section */
 		06CE1E42034059ED560BCAA747D963C4 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		0F3619BC9C68DF6D06CB9E5DAF774E41 /* News.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = News.json; sourceTree = "<group>"; };
-		1A3FA828CE682522E2493F6E6C100210 /* Pods-TimesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesApp.release.xcconfig"; path = "Target Support Files/Pods-TimesApp/Pods-TimesApp.release.xcconfig"; sourceTree = "<group>"; };
+		16C24A283B78611A12A58020 /* Pods-TimesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesApp.release.xcconfig"; path = "Target Support Files/Pods-TimesApp/Pods-TimesApp.release.xcconfig"; sourceTree = "<group>"; };
 		1B625668BF883AFF48C154501DF32DC0 /* NewsListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListVCTests.swift; sourceTree = "<group>"; };
 		2630101D2E627A4B800996C284DAAA00 /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
+		27B70F4717BA8B1CCBBBB0B4 /* Pods-TimesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesAppTests.release.xcconfig"; path = "Target Support Files/Pods-TimesAppTests/Pods-TimesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A11CE98E7C43A51874FD822 /* Pods_TimesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A381E973302A034FB470BDD5D253E8D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		2B3E602B7A0D6F84EC617F9DFF790E2B /* TimesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		309D8022E4CF2A28F0C27D2D9BD2C4A7 /* Pods-TimesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesAppTests.release.xcconfig"; path = "Target Support Files/Pods-TimesAppTests/Pods-TimesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		38BE3FA6ACA09BCF3A7A4C0964EBA440 /* NewsListVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListVMTests.swift; sourceTree = "<group>"; };
 		49CB56F57CB3200812A23DBF42398264 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		51CB76230D855E8A4A5F1A79BB62AC4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		61098F918C85CE4810A57912F162B043 /* StringProtocol+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Ext.swift"; sourceTree = "<group>"; };
+		661456956EB77AE5A43F5753 /* Pods-TimesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesApp.debug.xcconfig"; path = "Target Support Files/Pods-TimesApp/Pods-TimesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6EA4484145A9FD84CDC4CD187687A317 /* TimesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		703BCA9905F238EA60F0A470846870B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		722D226D45EB0B56EE9877917F7E9C8E /* Pods_TimesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E0D1AFAA5E0EC7BBEFEB408CC93C95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78410A2BADB44808157A5354F8911C29 /* NewsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTVCell.swift; sourceTree = "<group>"; };
 		7C78DD318382CCE2D2EEE9C939BAFEAA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -90,16 +91,15 @@
 		AA88AA4D92518996BFB74887462E04E1 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 		B237C73AADDEC55E78C64CDF026EBB12 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		B8B4AB7948D26438F4B51E02AEC4AC1C /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		BC7060B4FC6B0B7584FF6663 /* Pods_TimesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD58915F94F0E66A79DAD76042DA4002 /* NewsListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListUITests.swift; sourceTree = "<group>"; };
-		C62C01AE00906D136D8FF43005C8D552 /* Pods-TimesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TimesAppTests/Pods-TimesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC2767515DC47FEFDF46608BA2B4817F /* NewsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTVCell.xib; sourceTree = "<group>"; };
 		CC3434A8531D5F47310B57B26C81192F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4FCD41560C356391650CAE8BF562B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CCDB5B31B48D6C2D64053B08168F8F4B /* Pods_TimesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08520C2C2019DC2FA640D87FE996A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57AA35883A92DE35DF4622CF3B3996D /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		D7DA6A8C44153FCFBCFEC76B /* Pods-TimesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TimesAppTests/Pods-TimesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E27ECEAA8FCBD4B641D54AAC707C0901 /* TimesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8D383BECE63DB9D3E671432CE235225 /* Pods-TimesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimesApp.debug.xcconfig"; path = "Target Support Files/Pods-TimesApp/Pods-TimesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ECB889932C39C4BC406FD87CD48934B9 /* TimesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F928EC5F779E9E00383462764B647F74 /* TableViewIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIdentifier.swift; sourceTree = "<group>"; };
 		FCDA376BD21DEEB2B2B341B28D52FCE0 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48CAA6F16C4AF4B7B2CEC18930F0DCC8 /* Pods_TimesApp.framework in Frameworks */,
+				C5A9C2C72E12015616F081FD /* Pods_TimesApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66E39EF30BD91F5C7F27C3712BA738E /* Pods_TimesAppTests.framework in Frameworks */,
+				23ECEBB5972120175AFE27AD /* Pods_TimesAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +150,15 @@
 			path = TimesAppUITests;
 			sourceTree = "<group>";
 		};
+		19B8514B4DB9943DFF389204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC7060B4FC6B0B7584FF6663 /* Pods_TimesApp.framework */,
+				2A11CE98E7C43A51874FD822 /* Pods_TimesAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2BA7C22E5A1E191DD5EEAE837AB32DC7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,22 +178,13 @@
 			path = TimesAppTests;
 			sourceTree = "<group>";
 		};
-		3F1154BCAC0DC94536343CC613C3718C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				722D226D45EB0B56EE9877917F7E9C8E /* Pods_TimesApp.framework */,
-				CCDB5B31B48D6C2D64053B08168F8F4B /* Pods_TimesAppTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		50EF20DF1255408918CE4B71B185EE3F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E8D383BECE63DB9D3E671432CE235225 /* Pods-TimesApp.debug.xcconfig */,
-				1A3FA828CE682522E2493F6E6C100210 /* Pods-TimesApp.release.xcconfig */,
-				C62C01AE00906D136D8FF43005C8D552 /* Pods-TimesAppTests.debug.xcconfig */,
-				309D8022E4CF2A28F0C27D2D9BD2C4A7 /* Pods-TimesAppTests.release.xcconfig */,
+				661456956EB77AE5A43F5753 /* Pods-TimesApp.debug.xcconfig */,
+				16C24A283B78611A12A58020 /* Pods-TimesApp.release.xcconfig */,
+				D7DA6A8C44153FCFBCFEC76B /* Pods-TimesAppTests.debug.xcconfig */,
+				27B70F4717BA8B1CCBBBB0B4 /* Pods-TimesAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -298,10 +298,10 @@
 				76B57AC440E5C1B736DCA713C49AFB9E /* TimesApp */,
 				38DCFCD5B11AB9DF9D98A7739E2852A5 /* TimesAppTests */,
 				0DEF1949CD9A5C17ED12A76A91516A41 /* TimesAppUITests */,
-				3F1154BCAC0DC94536343CC613C3718C /* Frameworks */,
 				50EF20DF1255408918CE4B71B185EE3F /* Pods */,
 				AEBDD90448B91AFA08D4E5898F1C9FE4 /* Products */,
 				2A381E973302A034FB470BDD5D253E8D /* .swiftlint.yml */,
+				19B8514B4DB9943DFF389204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -394,12 +394,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7FD4D54BEF4F237E9C48F153409236C /* Build configuration list for PBXNativeTarget "TimesApp" */;
 			buildPhases = (
-				EBAF1AE85994330545037E8BE190AC37 /* [CP] Check Pods Manifest.lock */,
+				8369652D9E772ACD6EEE5B58 /* [CP] Check Pods Manifest.lock */,
 				87D49FAF722D8FA55D2020ECAC6642D6 /* Sources */,
 				96CF7753D75BD818E5E169A2CF6239D9 /* Frameworks */,
 				18DA1A6FDB697F44F4AEAEA35424168E /* Resources */,
 				C188321C6DB42350D812863D856FA96C /* SwiftLint */,
-				2324945E6D68F8D3F280612FE6E24C78 /* [CP] Embed Pods Frameworks */,
+				9C345A76419017746898C8E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,11 +432,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4975DC8B159AF64F1683D3A8A6B0850 /* Build configuration list for PBXNativeTarget "TimesAppTests" */;
 			buildPhases = (
-				15316DD99DEBE2B28FFD2385DE399C67 /* [CP] Check Pods Manifest.lock */,
+				BE2BE7CF6BB4F7C8838CD910 /* [CP] Check Pods Manifest.lock */,
 				A85A03CD478E9D53932D44A57F2A6626 /* Sources */,
 				9DE8E2B4952C876EC80068B8474110D9 /* Frameworks */,
 				01039FF928221E5624C13BD51CD9C8FF /* Resources */,
-				03066FAC5F9C701A80D166F157893B24 /* [CP] Embed Pods Frameworks */,
+				4F484D0AD66B007CD23FD71C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -522,7 +522,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03066FAC5F9C701A80D166F157893B24 /* [CP] Embed Pods Frameworks */ = {
+		4F484D0AD66B007CD23FD71C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -539,7 +539,46 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimesAppTests/Pods-TimesAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		15316DD99DEBE2B28FFD2385DE399C67 /* [CP] Check Pods Manifest.lock */ = {
+		8369652D9E772ACD6EEE5B58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C345A76419017746898C8E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimesApp/Pods-TimesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimesApp/Pods-TimesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimesApp/Pods-TimesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE2BE7CF6BB4F7C8838CD910 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -561,23 +600,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2324945E6D68F8D3F280612FE6E24C78 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TimesApp/Pods-TimesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TimesApp/Pods-TimesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimesApp/Pods-TimesApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C188321C6DB42350D812863D856FA96C /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,28 +617,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		EBAF1AE85994330545037E8BE190AC37 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TimesApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -706,7 +706,7 @@
 /* Begin XCBuildConfiguration section */
 		020A8B75BC3DA1DE81ADA0E92F2945C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C62C01AE00906D136D8FF43005C8D552 /* Pods-TimesAppTests.debug.xcconfig */;
+			baseConfigurationReference = D7DA6A8C44153FCFBCFEC76B /* Pods-TimesAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -740,7 +740,7 @@
 		};
 		8B6485690B4129D144E56C45631B2025 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 309D8022E4CF2A28F0C27D2D9BD2C4A7 /* Pods-TimesAppTests.release.xcconfig */;
+			baseConfigurationReference = 27B70F4717BA8B1CCBBBB0B4 /* Pods-TimesAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -828,7 +828,7 @@
 		};
 		A98FAEDAF6671513209FE5AEB15F5BCB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A3FA828CE682522E2493F6E6C100210 /* Pods-TimesApp.release.xcconfig */;
+			baseConfigurationReference = 16C24A283B78611A12A58020 /* Pods-TimesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -916,7 +916,7 @@
 		};
 		F14626EF7C66B5E72ACCA325883CFE7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8D383BECE63DB9D3E671432CE235225 /* Pods-TimesApp.debug.xcconfig */;
+			baseConfigurationReference = 661456956EB77AE5A43F5753 /* Pods-TimesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
