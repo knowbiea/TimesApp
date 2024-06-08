@@ -17,6 +17,7 @@ class NewsListVCTests: XCTestCase {
     override func setUp() {
         super.setUp()
         newsListVC = NewsListVC.instantiateViewController(storyboard: .main)
+        newsListVC.viewModel = NewsListVM()
         _ = newsListVC.view
     }
     

@@ -12,7 +12,7 @@ protocol NewsListOutput {
 }
 
 protocol NewsListInput {
-    func getNewsListNews(url: String, completion: @escaping (Bool, String?) -> Void)
+    func getNewsListNews(completion: @escaping (Bool, String?) -> Void)
     func searchNews(_ newsName: String, completion: @escaping () -> Void)
 }
 
@@ -25,8 +25,8 @@ final class NewsListVM: NewsListProtocol {
     var newsFilteredArray: [News]?
     var networkManager: NetworkManagerProtocol!
     
-    init(networkManager: NetworkManagerProtocol) {
-        self.networkManager = networkManager
+    init() {
+        networkManager = Constants.networkManager
     }
     
     // MARK: - Custom Methods
@@ -46,8 +46,8 @@ final class NewsListVM: NewsListProtocol {
     }
     
     // MARK: - API Calling
-    func getNewsListNews(url: String, completion: @escaping (Bool, String?) -> Void) {
-        networkManager.apiModelRequest(NewsList.self, url, .get, nil, nil) { response in
+    func getNewsListNews(completion: @escaping (Bool, String?) -> Void) {
+        networkManager.apiModelRequest(NewsList.self, .news, .get, nil, nil) { response in
             self.newsArray = response.results
             self.newsFilteredArray = response.results
             completion(true, nil)

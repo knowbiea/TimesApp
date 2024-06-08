@@ -10,13 +10,13 @@ import XCTest
 
 class NewsListVMTests: XCTestCase {
     
+    // MARK: - Properties
     var viewModel: NewsListVM!
-    var bundle: Bundle!
     
+    // MARK: - XCTestCase
     override func setUp() {
         super.setUp()
-        viewModel = NewsListVM(networkManager: MockNetworkManager())
-        bundle = Bundle(for: type(of: self))
+        viewModel = NewsListVM()
     }
     
     override func tearDown() {
@@ -27,11 +27,11 @@ class NewsListVMTests: XCTestCase {
     func testMockNewsAPICalling() {
         // Given
         let newsListVM = viewModel
-        guard let path = bundle.url(forResource: "News", withExtension: "json") else { return }
+        newsListVM?.networkManager = MockConstants.networkManager
         let expectation = self.expectation(description: "Testing News API Calling")
         
         // When
-        newsListVM?.getNewsListNews(url: path.absoluteString, completion: { success, error in
+        newsListVM?.getNewsListNews(completion: { success, error in
             expectation.fulfill()
         })
         
@@ -52,6 +52,7 @@ class NewsListVMTests: XCTestCase {
     func testSearchNewsData() {
         // Given
         let newsListVM = viewModel
+        newsListVM?.networkManager = MockConstants.networkManager
         let response = Mock().loadJSON(filename: "News", type: NewsList.self)
         newsListVM?.newsArray = response.results
         

@@ -50,8 +50,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let mainVC = MainVC.instantiateViewController(storyboard: .main)
-        let navigationController = UINavigationController(rootViewController: mainVC)
+        let newsListVC = NewsListVC.instantiateViewController(storyboard: .main)
+        newsListVC.viewModel = NewsListVM()
+        let navigationController = UINavigationController(rootViewController: newsListVC)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }

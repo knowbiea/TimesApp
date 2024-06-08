@@ -11,12 +11,10 @@ import UIKit
 import Alamofire
 import PromiseKit
 
-let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "www.google.com")
-
 protocol NetworkManagerProtocol {
     @discardableResult
     func apiModelRequest<T: Decodable>(_ model: T.Type,
-                                       _ url: String,
+                                       _ endpoint: Endpoints,
                                        _ httpMethod: HTTPMethod,
                                        _ header: [String: String]?,
                                        _ parameter: [String: AnyObject]?,
@@ -28,24 +26,18 @@ struct NetworkManager: NetworkManagerProtocol {
     
     @discardableResult
     func apiModelRequest<T: Decodable>(_ model: T.Type,
-                                       _ url: String,
+                                       _ endpoint: Endpoints,
                                        _ httpMethod: HTTPMethod = .get,
                                        _ header: [String: String]? = nil,
                                        _ parameter: [String: AnyObject]? = nil,
                                        success: @escaping (T) -> Void,
                                        failure: @escaping (Error) -> Void) -> SessionManager? {
         
-        if !(reachabilityManager!.isReachable) {
-            print("reachabilityManager is not Connected")
-            failure(parseError("No Internet Connection"))
-            return nil
-        }
-        
         let request = Alamofire.SessionManager.default
         
         firstly {
             request
-                .request(url, method: httpMethod, parameters: parameter, encoding: JSONEncoding.default, headers: header)
+                .request(endpoint.url, method: httpMethod, parameters: parameter, encoding: JSONEncoding.default, headers: header)
                 .response(.promise)
             
         }.done { url, response, data in
@@ -78,6 +70,8 @@ struct NetworkManager: NetworkManagerProtocol {
 struct APIError {
     static let domain = "ParseError"
     static let message = "Unable to parse data"
+    static let fileName = "Unable to find File Name"
+    static let jsonFile = "Failed to load JSON file."
     static let code = Int(UInt8.max)
 }
 
